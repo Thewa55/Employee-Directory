@@ -6,11 +6,11 @@ function Input(props) {
       Search for employee:
       <form className="form mb-3">
         <input  
-          value={props.name}
+          value={props.searchname}
           name="searchname"
           onChange={props.handleInputChange}
           type="text"
-          placeholder="First Name"/>{props.children}
+          placeholder="Search"/>{props.children}
       </form>
     </div>
   )

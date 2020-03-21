@@ -14,14 +14,13 @@ class App extends Component {
   };
 
   handleInputChange = event => {
-    const{name, searchname} = event.target;
+    const{name, value} = event.target;
+    console.log(event.target)
     this.setState({
-      [name]: searchname
+      [name]: value
     })
-  }
-
-  searchEmployee = () =>{
-    const employees = this.state.employees.filter(employee => employee.name.includes(this.searchname))
+    
+    const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
 
     this.setState({employees})
   }  
@@ -30,10 +29,11 @@ class App extends Component {
     return (
       <Container>
         <Title
-          name={this.state.searchname}
-          onChange={this.handleInputChange}
         >Employees</Title>
-        <Input></Input>
+        <Input
+          value = {this.state.searchname}
+          name= "searchname"
+          onChange={this.handleInputChange}></Input>
           {this.state.employees.map(employee => (
           <Row>
             <EmployeeCard
