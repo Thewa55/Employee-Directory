@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Rebecca Dion",
+    "role": "Manager",
+    "email": "RebeccaDion@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Kayley Vaughan",
+    "role": "Senior Engineer",
+    "email": "Kayley1995@aol.com"
+  },
+  {
+    "id": 3,
+    "name": "Klay Lewis",
+    "role": "Engineer",
+    "email": "KlayLew821@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Cheri Ross",
+    "role": "Engineer",
+    "email": "TheBestCheri123@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Veltry Menas",
+    "role": "Intern",
+    "email": "VeltryMenas@yahoo.com"
+  },
+  {
+    "id": 6,
+    "name": "Bruce Smith",
+    "role": "Accountant",
+    "email": "BruceSmith1111@gmail.com"
+  },
+  {
+    "id": 7,
+    "name": "Mathew Ross",
+    "role": "Accountant",
+    "email": "MathewTheAccountant@gmail.com"
+  },
+  {
+    "id": 8,
+    "name": "Jose Tebonius",
+    "role": "Sales",
+    "email": "TheTebonius1@yahoo.com"
+  },
+  {
+    "id": 9,
+    "name": "Diane Kane",
+    "role": "Sales",
+    "email": "DianeSales@gmail.com"
+  }
+]
