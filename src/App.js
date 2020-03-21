@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
-import Wrapper from "./components/Wrapper";
+import EmployeeCard from "./components/EmployeeCard";
+// import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Container from "./components/Container";
+// import Row from "./components/Row"
 import employees from "./employees.json";
 
 class App extends Component {
@@ -12,18 +14,22 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
+      // <Wrapper>
+        <Container>
         <Title>Employees</Title>
-        {this.state.employees.map(employee => (
-          <FriendCard
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            occupation={employee.role}
-            location={employee.email}
-          />
-        ))}
-      </Wrapper>
+          {this.state.employees.map(employee => (
+            // <Row>
+            <EmployeeCard
+              id={employee.id}
+              key={employee.id}
+              name={employee.name}
+              role={employee.role}
+              email={employee.email}
+            />  
+            // </Row>
+          ))}
+        </Container>
+      // </Wrapper>
     );
   }
 }
