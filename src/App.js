@@ -19,13 +19,20 @@ class App extends Component {
     this.setState({
       [name]: value
     })
-    console.log(this.state.searchname)
-    const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
-    console.log(employees)
+    // console.log(this.state.searchname)
+    // const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
+    // console.log(employees)
     // this.setState({employees})
   }  
 
+  // namesearch = ()=>{
+  //   const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
+  //   console.log(employees)
+  //   this.setState({employees})
+  // }
+
   render() {
+
     return (
       <Container>
         <Title
@@ -42,8 +49,9 @@ class App extends Component {
           </form>
         </div>
           {this.state.employees.map(employee => (
-          <Row>
+          <Row key={employee.id}> 
             <EmployeeCard
+              search={this.state.searchname}
               id={employee.id}
               key={employee.id}
               name={employee.name}
