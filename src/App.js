@@ -19,20 +19,9 @@ class App extends Component {
     this.setState({
       [name]: value
     })
-    // console.log(this.state.searchname)
-    // const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
-    // console.log(employees)
-    // this.setState({employees})
   }  
 
-  // namesearch = ()=>{
-  //   const employees = this.state.employees.filter(employee => employee.name.includes(this.state.searchname))
-  //   console.log(employees)
-  //   this.setState({employees})
-  // }
-
   render() {
-
     return (
       <Container>
         <Title

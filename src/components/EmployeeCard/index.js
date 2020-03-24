@@ -6,9 +6,10 @@ function FriendCard(props) {
   if(props.name.includes(props.search) || props.search === "")
     return (
       <ul className="list-inline col-12">
+        <li className="list-group-item col-1">ID: {props.id}</li>
         <li className="list-group-item col-3">Name: {props.name}</li>
         <li className="list-group-item col-3">Role: {props.role}</li>
-        <li className="list-group-item col-6">E-mail: {props.email}</li>
+        <li className="list-group-item col-5">E-mail: {props.email}</li>
       </ul>  
     );
   else{
