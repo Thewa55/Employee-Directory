@@ -3,7 +3,7 @@ import "./style.css";
 
 function FriendCard(props) {
   console.log(props.searchname)
-  if(props.name.includes(props.search) || props.search === "")
+  if(props.name.toLowerCase().includes(props.search.toLowerCase()) || props.search === "")
     return (
       <ul className="list-inline col-12">
         <li className="list-group-item col-1">ID: {props.id}</li>
